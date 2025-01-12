@@ -5,7 +5,16 @@
 Etwas Text
 
 ```blocks
-basic.showString("Maik")
+basic.showLeds(`
+    # . # . #
+    . # . # .
+    . . # . .
+    . # # # .
+    # . # . #
+    `)
+    input.onButtonPressed(Button.A, function () {
+    music.play(music.stringPlayable("C5 C5 C5 C5 C5 C5 C5 C5 ", 120), music.PlaybackMode.UntilDone)
+})
 ```
 
 ## Step 2
