@@ -1,26 +1,14 @@
 # My Tutorial
 
-## Step 1
+## Schritt 1
 
-Etwas Text
+Wieviele Leuchpunkte an welchem Anschluss?
 
 ```blocks
-basic.showLeds(`
-    # . # . #
-    . # . # .
-    . . # . .
-    . # # # .
-    # . # . #
-    `)
-    input.onButtonPressed(Button.A, function () {
-    music.play(music.stringPlayable("C5 C5 C5 C5 C5 C5 C5 C5 ", 120), music.PlaybackMode.UntilDone)
-})
+let strip = neopixel.create(DigitalPin.P0, 24, NeoPixelMode.RGB)
 ```
 
 ## Step 2
 
 Congratulations, you did it!
-
-## Schritt 3
-Noch etwas
     
